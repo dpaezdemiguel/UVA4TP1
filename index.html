@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chistes</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <header class="header">
+    <h1>Chistes</h1>
+    <nav class="nav">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="acercade.html">Acerca de</a>
+    </nav>
+  </header>
+
+  <main class="main-wrapper">
+    <section class="chiste-wrapper" aria-live="polite">
+      <div class="chiste-contenedor" id="chisteActual">
+        <!-- Chiste se carga por JS -->
+      </div>
+      <div class="botones">
+        <button onclick="anteriorChiste()" aria-label="Chiste anterior">Anterior</button>
+        <button onclick="siguienteChiste()" aria-label="Siguiente chiste">Siguiente</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© <strong>2025 Daniela Páez De Miguel</strong><br><br>
+      Todos los derechos reservados.<br>
+      Proyecto realizado como parte de la materia Diseño y Desarrollo WEB.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff9f0;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  .header {
+    background-color: #5e3aee;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .nav a {
+    color: #a2b8f5;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav a:hover,
+  .nav a[aria-current="page"] {
+    text-decoration: underline;
+  }
+  
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 40px 20px;
+  }
+  
+  .chiste-wrapper,
+  .acerca-wrapper {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 2px solid #5e3aee;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .chiste-contenedor {
+    font-size: 20px;
+  }
+  
+  .pregunta {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .respuesta {
+    font-style: italic;
+  }
+  
+  .botones {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 20px;
+  }
+  
+  .botones button {
+    background-color: #ffb347;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .botones button:hover {
+    background-color: #ff6961;
+  }
+  
+  .footer {
+    background-color: #5e3aee;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+  }
+  
+  
+  

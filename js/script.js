@@ -14,12 +14,15 @@ const chistes = [
   let indice = 0;
   
   function mostrarChiste() {
-    const chiste = chistes[indice];
     const contenedor = document.getElementById("chisteActual");
-    contenedor.innerHTML = `
-      <p class="pregunta">${chiste.pregunta}</p>
-      <p class="respuesta">${chiste.respuesta}</p>
-    `;
+    contenedor.innerHTML = `<p>Cargando chiste...</p>`;
+    setTimeout(() => {
+      const chiste = chistes[indice];
+      contenedor.innerHTML = `
+        <p class="pregunta">${chiste.pregunta}</p>
+        <p class="respuesta">${chiste.respuesta}</p>
+      `;
+    }, 100); // pequeño retraso para simular carga
   }
   
   function siguienteChiste() {
@@ -33,4 +36,10 @@ const chistes = [
   }
   
   window.onload = mostrarChiste;
+  
+  // Accesibilidad: soporte para teclado
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") siguienteChiste();
+    if (e.key === "ArrowLeft") anteriorChiste();
+  });
   

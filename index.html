@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Sitio de chistes interactivo y accesible. Proyecto de Daniela Páez De Miguel.">
   <title>Chistes</title>
   <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-  <header class="header">
+  <header class="header" role="banner">
     <h1>Chistes</h1>
     <nav class="nav">
       <a href="index.html" aria-current="page">Home</a>
@@ -15,19 +16,19 @@
     </nav>
   </header>
 
-  <main class="main-wrapper">
+  <main class="main-wrapper" role="main">
     <section class="chiste-wrapper" aria-live="polite">
       <div class="chiste-contenedor" id="chisteActual">
         <!-- Chiste se carga por JS -->
       </div>
       <div class="botones">
-        <button onclick="anteriorChiste()" aria-label="Chiste anterior">Anterior</button>
-        <button onclick="siguienteChiste()" aria-label="Siguiente chiste">Siguiente</button>
+        <button type="button" onclick="anteriorChiste()" aria-label="Chiste anterior">Anterior</button>
+        <button type="button" onclick="siguienteChiste()" aria-label="Siguiente chiste">Siguiente</button>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="footer-content">
       <p>© <strong>2025 Daniela Páez De Miguel</strong><br><br>
       Todos los derechos reservados.<br>
